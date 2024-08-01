@@ -13,7 +13,7 @@ class SavedCitiesScreen extends StatelessWidget {
     return Scaffold(
       body: Stack(
         children: [
-          // Background Image
+
           Container(
             decoration: BoxDecoration(
               image: DecorationImage(
@@ -22,11 +22,10 @@ class SavedCitiesScreen extends StatelessWidget {
               ),
             ),
           ),
-          // Semi-transparent Overlay
+
           Container(
             color: Colors.black.withOpacity(0.3),
           ),
-          // Custom Header
           Positioned(
             top: 30,
             left: 0,
@@ -43,10 +42,8 @@ class SavedCitiesScreen extends StatelessWidget {
               ),
             ),
           ),
-          // List of Saved Cities
           Padding(
             padding: EdgeInsets.only(top: 80),
-            // Adjust this value to fit below the header
             child: ListView.builder(
               itemCount: weatherProvider.savedCities.length,
               itemBuilder: (context, index) {
