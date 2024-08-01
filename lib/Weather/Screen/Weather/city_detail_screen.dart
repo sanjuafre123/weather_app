@@ -33,7 +33,6 @@ class CityDetailScreen extends StatelessWidget {
             SizedBox(height: 16),
             Text('Temperature: ${weatherDetails.currentModal.tempC}°C'),
             Text('Condition: ${weatherDetails.currentModal.conditionModel.text}'),
-            // You can add more weather details here if needed
           ],
         ),
       ),
